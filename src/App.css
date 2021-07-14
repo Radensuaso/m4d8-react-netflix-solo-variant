@@ -1,0 +1,117 @@
+/* Common */
+
+body {
+  background-color: #141414 !important;
+  color: white !important;
+}
+
+/*Nav Bar*/
+
+nav.home-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
+
+.bg-dark-netflix {
+  background-color: #141414;
+}
+
+#logo-navbar {
+  width: 70px;
+}
+
+#profile-pic {
+  width: 2rem;
+}
+/* Main */
+main#home-main {
+  margin-top: 5rem;
+}
+
+/* search area */
+#search-area {
+  margin-top: 4rem;
+  color: white;
+}
+
+#div-Icons > div div {
+  border: 1px solid #808080;
+  padding: 3px 10px;
+  margin: 0;
+  display: inline-block;
+}
+#div-Icons {
+  color: #808080;
+  width: 107px;
+}
+
+#edit-profile-title {
+  border-bottom: 1px solid #dddddd;
+}
+
+#searchedMovies img {
+  object-fit: cover;
+  width: 30rem;
+  height: 13rem;
+}
+
+/*Footer*/
+footer {
+  background-color: #141414;
+  color: #808080;
+}
+
+p {
+  font-size: 13px;
+}
+#copyright {
+  font-size: 11px;
+}
+
+.service-code {
+  border: 1px solid #808080;
+  background-color: #141414;
+  color: #808080;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.btn {
+  border-radius: 0 !important;
+}
+
+.btn-secondary {
+  background-color: #141414 !important;
+}
+
+nav {
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 64.36px;
+}
+
+#strive-student {
+  background-color: #666;
+  color: white;
+  padding: 0px;
+  font-size: 25px;
+  margin-right: 50px;
+}
+
+#language {
+  color: white;
+  font-size: 25px;
+}
+.m-bottom {
+  border-bottom: 1px solid #dddddd;
+}
+
+#maturity-ratings {
+  background-color: #333333;
+  margin-right: 160px;
+}

@@ -1,0 +1,108 @@
+Team Challenge Instructions
+Not completed yet
+Today your Team Challenge will be about refactoring your previous Netflix project with ReactJS and remote fetchings.
+
+ 
+
+API INFO:
+
+ 
+
+Register to http://www.omdbapi.com/
+
+ 
+
+Once registered, you'll receive via email an api key.
+
+The API has a search method:
+
+ 
+
+http://www.omdbapi.com/?apikey=[YOUR API KEYHERE]&s=harry%20potter
+ 
+
+This search returns an object like this:
+
+ 
+
+{
+"Search": [
+    {
+        "Title": "Harry Potter and the Deathly Hallows: Part 2",
+        "Year": "2011",
+        "imdbID": "tt1201607",
+        "Type": "movie",
+        "Poster": "https://bit.ly/3sufYok"
+    },
+    {
+        "Title": "Harry Potter and the Sorcerer's Stone",
+        "Year": "2001",
+        "imdbID": "tt0241527",
+        "Type": "movie",
+        "Poster": "https://bit.ly/3tTtx0H"
+    },
+    {
+        "Title": "Harry Potter and the Chamber of Secrets",
+        "Year": "2002",
+        "imdbID": "tt0295297",
+        "Type": "movie",
+        "Poster": "https://bit.ly/31gVxzb"
+    },
+    {
+        "Title": "Harry Potter and the Prisoner of Azkaban",
+        "Year": "2004",
+        "imdbID": "tt0304141",
+        "Type": "movie",
+        "Poster": "https://bit.ly/2QzHt1n"
+    },
+],
+"totalResults": "80",
+"Response": "True"
+}
+ 
+
+--> PLEASE NOTE THAT THE ARRAY WITH THE MOVIES IS INTO THE .Search PROPERTY OF THE RESPONSE <--
+
+ 
+
+ 
+
+You have a CRUD endpoint for comments on:
+
+ 
+
+https://striveschool-api.herokuapp.com/api/comments/
+ 
+
+This means you can GET, DELETE, POST, PUT data from there.
+
+ 
+
+The Comment structure is this:
+
+ 
+
+{
+    "comment": "A good movie but definitely I don't like many parts of the plot",
+    "rate": 3,
+    "elementId": "tt1756545"
+}
+ 
+
+Where:
+
+comment is the text of the comment inserted by the user
+rate is a value between 1 and 5
+elementId is the imdbID of the movie / serie
+ 
+
+Suggested steps:
+
+Start from the best old Netflix project your team members achieved in M2 and create the main page (with all the styles and the search bar)
+Create, using components, the several "galleries" for the movies (at least 3 galleries with 3 sagas you like (es.: Harry Potter, Lord of the Rings etc.))
+Implement a working search bar that triggers the APIs and propose the result.
+Implement loaders, form validation and error messages throughout the app
+[EXTRA] Implement empty state and loaders also for the search
+[EXTRA] When clicking on a movie show its Comment list
+[EXTRA] Let the user add a comment to a movie in the Comment list
+[EXTRA] Sort every AJAX response per Year (from newer to older)
