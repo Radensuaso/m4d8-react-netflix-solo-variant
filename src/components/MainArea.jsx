@@ -19,7 +19,7 @@ class SearchArea extends Component {
 
     try {
       const response = await fetch(
-        "http://www.omdbapi.com/?apikey=3d9e8fbe&s=" + search
+        "http://www.omdbapi.com/?apikey=efd210c7&s=" + search
       )
 
       const parsedResponse = await response.json()

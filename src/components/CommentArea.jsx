@@ -3,6 +3,7 @@ import Form from "react-bootstrap/Form"
 import Button from "react-bootstrap/Button"
 import LoadingSpinner from "./LoadingSpinner"
 import Alert from "react-bootstrap/Alert"
+import { BiTrash } from "react-icons/bi"
 
 class CommentArea extends Component {
   state = {
@@ -36,7 +37,7 @@ class CommentArea extends Component {
         {
           headers: {
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGRjNjA5ZmIzNTgxNzAwMTVjMjI3MGMiLCJpYXQiOjE2MjUwNTUzOTEsImV4cCI6MTYyNjI2NDk5MX0.4rreCWruc8iinYHIIdhbPTQo52bs9c82UeMWN-fKg0o",
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGRjNjA5ZmIzNTgxNzAwMTVjMjI3MGMiLCJpYXQiOjE2MjYyNjc0NjAsImV4cCI6MTYyNzQ3NzA2MH0.PbFT8PaHBhXD1sNI5QCDjBzDy7_G0CdA9lHuiHtsuNw",
           },
         }
       )
@@ -65,7 +66,7 @@ class CommentArea extends Component {
           body: JSON.stringify(this.state.postComment),
           headers: {
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGRjNjA5ZmIzNTgxNzAwMTVjMjI3MGMiLCJpYXQiOjE2MjUwNTUzOTEsImV4cCI6MTYyNjI2NDk5MX0.4rreCWruc8iinYHIIdhbPTQo52bs9c82UeMWN-fKg0o",
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGRjNjA5ZmIzNTgxNzAwMTVjMjI3MGMiLCJpYXQiOjE2MjYyNjc0NjAsImV4cCI6MTYyNzQ3NzA2MH0.PbFT8PaHBhXD1sNI5QCDjBzDy7_G0CdA9lHuiHtsuNw",
 
             "Content-Type": "application/json",
           },
@@ -106,7 +107,7 @@ class CommentArea extends Component {
           method: "DELETE",
           headers: {
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGRjNjA5ZmIzNTgxNzAwMTVjMjI3MGMiLCJpYXQiOjE2MjUwNTUzOTEsImV4cCI6MTYyNjI2NDk5MX0.4rreCWruc8iinYHIIdhbPTQo52bs9c82UeMWN-fKg0o",
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGRjNjA5ZmIzNTgxNzAwMTVjMjI3MGMiLCJpYXQiOjE2MjYyNjc0NjAsImV4cCI6MTYyNzQ3NzA2MH0.PbFT8PaHBhXD1sNI5QCDjBzDy7_G0CdA9lHuiHtsuNw",
           },
         }
       )
@@ -210,7 +211,7 @@ class CommentArea extends Component {
                     onClick={() => this.deleteComment(comment._id)}
                     variant="danger"
                   >
-                    <i className="bi bi-trash-fill"></i>
+                    <BiTrash />
                   </Button>
                 </div>
               ))
