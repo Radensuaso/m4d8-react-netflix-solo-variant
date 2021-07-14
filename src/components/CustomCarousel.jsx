@@ -6,21 +6,6 @@ export default class CustomCarousel extends Component {
   state = {
     movies: [],
   }
-  fetchMovies = async () => {
-    try {
-      console.log(this.props.searchQuery)
-      const response = await fetch(
-        "http://www.omdbapi.com/?apikey=3d9e8fbe&s=" + this.props.searchQuery
-      )
-      const fetchedMovies = await response.json()
-      this.setState({ movies: fetchedMovies.Search })
-    } catch (error) {
-      console.log(error)
-    }
-  }
-  componentDidMount = () => {
-    this.fetchMovies()
-  }
 
   render() {
     return (

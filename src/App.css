@@ -26,15 +26,10 @@ nav.home-navbar {
 #profile-pic {
   width: 2rem;
 }
-/* Main */
-main#home-main {
-  margin-top: 5rem;
-}
 
-/* search area */
-#search-area {
+/* Main area */
+#main-area {
   margin-top: 4rem;
-  color: white;
 }
 
 #div-Icons > div div {
@@ -52,10 +47,27 @@ main#home-main {
   border-bottom: 1px solid #dddddd;
 }
 
-#searchedMovies img {
+#main-area img {
   object-fit: cover;
   width: 30rem;
   height: 13rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Sho details */
+#show-details {
+  margin-top: 4rem;
+}
+
+#show-details img {
+  object-fit: cover;
+  width: 60rem;
+  height: 45rem;
+}
+
+#show-details p {
+  font-size: 1.5rem;
 }
 
 /*Footer*/
