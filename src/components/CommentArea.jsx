@@ -135,8 +135,8 @@ class CommentArea extends Component {
 
   render() {
     return (
-      <div className="comment-area d-flex flex-column align-items-center p-4">
-        <div>
+      <div className="comment-area d-flex flex-column align-items-center">
+        <div className="w-100">
           <h4 className="my-4">{this.props.movie.Title}</h4>
 
           <form onSubmit={(e) => this.handleSubmit(e)}>

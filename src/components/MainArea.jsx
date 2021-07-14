@@ -26,6 +26,7 @@ class SearchArea extends Component {
       const movies = parsedResponse.Search
 
       if (response.ok) {
+        console.log(movies)
         this.setState({ [movieSection]: movies })
       } else {
         console.log("something went wrong")
@@ -48,7 +49,7 @@ class SearchArea extends Component {
 
   render() {
     return (
-      <Container fluid id="search-area">
+      <Container fluid id="main-area">
         <Row className="pl-2 w-100 justify-content-between align-items-center">
           <Col xm={12} sm={8} md={6} lg={5} className="d-flex">
             <h3 className="mr-3 text-nowrap">Search</h3>
