@@ -19,7 +19,7 @@ class SearchArea extends Component {
 
     try {
       const response = await fetch(
-        `${process.env.REACT_APP_BE_BASE_URL}?Title=${search}`
+        `${process.env.REACT_APP_BE_BASE_URL}/media?Title=${search}`
       );
 
       if (response.ok) {
