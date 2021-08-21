@@ -1,7 +1,7 @@
-import React, { Component } from "react"
-import { Button, Container, Row, Col, Form } from "react-bootstrap"
-import { FaStream, FaThLarge } from "react-icons/fa"
-import CustomCarousel from "./CustomCarousel"
+import React, { Component } from "react";
+import { Button, Container, Row, Col, Form } from "react-bootstrap";
+import { FaStream, FaThLarge } from "react-icons/fa";
+import CustomCarousel from "./CustomCarousel";
 
 class SearchArea extends Component {
   state = {
@@ -10,42 +10,41 @@ class SearchArea extends Component {
     dcMovies: [],
     starWarsMovies: [],
     searchValue: "",
-  }
+  };
 
   fetchMovies = async (search, movieSection, e) => {
     if (e) {
-      e.preventDefault()
+      e.preventDefault();
     }
 
     try {
       const response = await fetch(
-        "http://www.omdbapi.com/?apikey=efd210c7&s=" + search
-      )
-
-      const parsedResponse = await response.json()
-      const movies = parsedResponse.Search
+        `${process.env.REACT_APP_BE_BASE_URL}?Title=${search}`
+      );
 
       if (response.ok) {
-        console.log(movies)
-        this.setState({ [movieSection]: movies })
+        const parsedResponse = await response.json();
+        const movies = parsedResponse.media;
+        console.log(movies);
+        this.setState({ [movieSection]: movies });
       } else {
-        console.log("something went wrong")
+        console.log("something went wrong");
       }
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
-  }
+  };
 
   updateSearchState = (value) => {
-    this.setState({ searchValue: value })
-  }
+    this.setState({ searchValue: value });
+  };
 
   componentDidMount = () => {
-    this.fetchMovies("harry potter", "stateMovies")
-    this.fetchMovies("marvel", "marvelMovies")
-    this.fetchMovies("justice league", "dcMovies")
-    this.fetchMovies("star wars", "starWarsMovies")
-  }
+    this.fetchMovies("harry potter", "stateMovies");
+    this.fetchMovies("marvel", "marvelMovies");
+    this.fetchMovies("justice league", "dcMovies");
+    this.fetchMovies("star wars", "starWarsMovies");
+  };
 
   render() {
     return (
@@ -101,8 +100,8 @@ class SearchArea extends Component {
           />
         </Row>
       </Container>
-    )
+    );
   }
 }
 
-export default SearchArea
+export default SearchArea;
