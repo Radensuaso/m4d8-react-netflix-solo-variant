@@ -1,9 +1,8 @@
 # Netflix with React
 
-<!--
 ## Introduction
 
-Hello fellow developers. This is a Netflix homepage clone made with react. A friday challenge of the Strive school Fullstack Web development course.
+Hello World! This is exercise done while I was at Strive School
 
 ## Technologies
 
@@ -11,7 +10,7 @@ Hello fellow developers. This is a Netflix homepage clone made with react. A fri
 
 ## Launch
 
-Clone this Repo to your machine and do npm install on your shell. After that is complete just type npm start and that should work.
+The link to see this project is: https://neflix-radensuaso.vercel.app/
 
 Enjoy!
  -->
