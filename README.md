@@ -13,4 +13,3 @@ Hello World! This is exercise done while I was at Strive School
 The link to see this project is: https://neflix-radensuaso.vercel.app/
 
 Enjoy!
- -->
