@@ -10,6 +10,6 @@ Hello World! This is exercise done while I was at Strive School
 
 ## Launch
 
-The link to see this project is: https://neflix-radensuaso.vercel.app/
+The link to see this project is: https://netflix-radensuaso.vercel.app/
 
 Enjoy!
